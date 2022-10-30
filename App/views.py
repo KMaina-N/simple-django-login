@@ -7,5 +7,5 @@ def login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-        return HttpResponse('Hello ' + username + ' ' + password)
+        return HttpResponse('Hello test' + username + ' ' + password)
     return render(request, 'login.html')
